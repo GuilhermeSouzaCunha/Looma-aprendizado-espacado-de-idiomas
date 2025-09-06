@@ -1,7 +1,7 @@
-const Button = ({variant = "primary", ...props}) => {
+const Button = ({variavelBotao = "", ...props}) => {
     return (
         <section>
-            <button tipo={props.type} className={`btn btn-${variant}`}>{props.nome}</button>
+            <button type={props.tipo} className={`${variavelBotao}`} onClick={props.onClick}>{props.nome}</button>
         </section>
     )
 }
