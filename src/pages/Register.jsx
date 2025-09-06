@@ -14,7 +14,7 @@ const Register = () => {
     const handleSubmit = (evento) => {
         if (!(senha === senhaRepetir)) {
             alert("Senhas não são iguais")
-            navigate(0)
+            return
         }
 
         if (!nome || !email || !senha || !senhaRepetir) {
@@ -49,10 +49,10 @@ const Register = () => {
                     <TextField tipo="password" valor={senhaRepetir} ehObrigatorio={true} nome="Senha novamente" legenda="Repita sua senha. Ex.: Aa123!" onChange={(e) => setSenhaRepetir(e.target.value)} variantLabel="form-label" variantInput="form-control" />
                 </div>
                 <div className="mb-3">
-                    <Button nome="Cadastrar" tipo="Button" variant="primary" />
+                    <Button nome="Cadastrar" tipo="submit" variant="primary" />
                 </div>
                 <div className="mb-3">
-                    <Button nome="Logar" tipo="Button" variant="outline-secondary" />
+                    <Button nome="Logar" tipo="submit" variant="outline-secondary" />
                 </div>
             </form>
         </div>
