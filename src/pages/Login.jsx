@@ -58,7 +58,7 @@ const Login = () => {
                 <div className="mb-3">
                     <Button 
                         tipo="submit" 
-                        nome="Logar" 
+                        nome="Entrar" 
                         variavelBotao="btn btn-primary" 
                     />
                 </div>
