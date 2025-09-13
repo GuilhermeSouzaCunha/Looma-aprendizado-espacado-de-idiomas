@@ -1,7 +1,7 @@
-import AboutSection from "../components/AboutSection"
-import FeaturesSection from "../components/FeaturesSection"
+import AboutSection from "../components/HomePage/AboutSection"
+import FeaturesSection from "../components/HomePage/FeaturesSection"
 import Footer from "../components/Footer"
-import HeroSection from "../components/HeroSection"
+import HeroSection from "../components/HomePage/HeroSection"
 import NavBar from "../components/NavBar"
 
 function Home() {
